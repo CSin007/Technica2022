@@ -17,6 +17,8 @@ We are very proud of being able to create a professional looking website in the 
 
 **What we learned**
 We learned front-end development. As beginners in coding, this was a very insightful experience. We were able to learn the intricacies of a website's aesthetic elements. We also learned how to use keywords to match results using Javascript.
-**
+
+
+
 **What's next for FedMatch****
 We plan to expand our database using APIs from different job listing websites like LinkedIn and Indeed. We can use this data to make our search wider and connect users to their desired jobs. We also would like to have a newsletter where users will be emailed jobs related to their areas of interest.
