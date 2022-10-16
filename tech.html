@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpeg" />
 </head>
 
 <body>
     <!-- Navbar Section -->
     <nav class="navbar">
+        <a class="navbar-brand" href="/" ></a>
+            <div class="logo-image">
+                <img src="logo.jpeg" class="img-fluid">
+            </div>
+        </a>
         <div class="navbar__container">
-            <a href="index.html#home" id="navbar__logo">COLOR</a>
+        
+            <a href="#home" id="navbar__logo">FedMatch</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
@@ -24,10 +31,10 @@
                     <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="index.html#about" class="navbar__links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar__links" id="about-page">Job Match</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="index.html#services" class="navbar__links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar__links" id="services-page">Agencies</a>
                 </li>
                 <li class="navbar__btn">
                     <a href="index.html#sign-up" class="button" id="signup">Sign Up</a>
@@ -40,6 +47,7 @@
     <div class="main" id="sign-up">
         <div class="main__container">
             <div class="main__content">
+                <h1>Job-Matching Form</h1>
                 <form onsubmit="return false"> 
                     <label for="fname">Legal First name:</label><br>
                     <input type="text" id="fname" name="fname"><br><br>
@@ -49,14 +57,14 @@
                     <input type="text" id="email" name="email"><br><br>
                     <label for="information">What are some things that you are passionate about? Tell us about your interests and skills, and we'll match you to government jobs that are right for you!</label><br>
                     <textarea id="information" name="information" rows="8" cols="100"></textarea><br>
-                    <button type="button" class="main__btn" onclick="search()">Submit</button>
+                    <button type="button" class="main__btn" onclick="search()"><a href=#results>Submit</a></button>
                 </form>
             </div>
         </div>
     </div>
 
     <div class="main" id="results">
-        <div class="main__container">
+        <div class="main_container">
             <div class="main__content" id="results-list">
             </div>
         </div>

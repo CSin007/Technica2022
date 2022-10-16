@@ -48,10 +48,9 @@
     width: 50px;
     height: 50px;
     border-radius: 20%;
-    overflow: hidden;
+    overflow: show;
     margin-top: -6px;
-    position:relative;
-    top:-10px"
+
 }
 
 .navbar__menu {
@@ -707,4 +706,28 @@
         padding: 10px;
         width: 100%;
     }
+}
+
+#results{
+    padding: 0 50px;
+}
+
+#results h1{
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+#results p{
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+
+.job:hover {
+    background-color: #f6f6f6;
+}
+
+img.img-fluid{
+    margin-left: 30px;
+    height:50px;
+    width:50px;
 }

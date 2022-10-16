@@ -104,19 +104,14 @@ function search(){
     jobs[i].push(counter);
   }
 
-  console.log(jobs);
-
   let maximum = 0;
-  let maxJob = [];
   for (let i = 0; i < jobs.length; i++){
     if (jobs[i][4] > maximum){
       maximum = jobs[i][4];
-      maxJob = jobs[i];
     }
   }
-  jobsFinal.push(maxJob);
   let end = false;
-  for (let i = maximum - 1; i >= 0; i--){
+  for (let i = maximum; i >= 0; i--){
     if (end == true){
       break;
     }
@@ -149,7 +144,7 @@ function search(){
     division.appendChild(h1);
     division.appendChild(small);
     division.appendChild(p);
+    division.appendChild(document.createElement("br"))
     results.appendChild(division);
-    console.log(results);
   }
 }
