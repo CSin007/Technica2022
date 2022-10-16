@@ -14,23 +14,23 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="home.html#home" id="navbar__logo">COLOR</a>
+            <a href="index.html#home" id="navbar__logo">COLOR</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="home.html#home" class="navbar__links" id="home-page">Home</a>
+                    <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="home.html#about" class="navbar__links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar__links" id="about-page">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="home.html#services" class="navbar__links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar__links" id="services-page">Services</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="home.html#sign-up" class="button" id="signup">Sign Up</a>
+                    <a href="index.html#sign-up" class="button" id="signup">Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@
     <div class="main" id="sign-up">
         <div class="main__container">
             <div class="main__content">
-                <form>
+                <form onsubmit="return false"> 
                     <label for="fname">Legal First name:</label><br>
                     <input type="text" id="fname" name="fname"><br><br>
                     <label for="lname">Legal Last name:</label><br>
@@ -49,8 +49,15 @@
                     <input type="text" id="email" name="email"><br><br>
                     <label for="information">What are some things that you are passionate about? Tell us about your interests and skills, and we'll match you to government jobs that are right for you!</label><br>
                     <textarea id="information" name="information" rows="8" cols="100"></textarea><br>
-                    <input type="submit" value="Submit">
+                    <button type="button" class="main__btn" onclick="search()">Submit</button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="results">
+        <div class="main__container">
+            <div class="main__content" id="results-list">
             </div>
         </div>
     </div>
