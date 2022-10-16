@@ -74,7 +74,11 @@ var jobs = [["Customer Service Representative - Seasonal",
 ["Data Analyst (Advanced) Government Jobs",
 "AT&T Government Solutions",
 "Springfield, VA",
-"AT&T Global Public Sector is a trusted provider of secure, IP enabled, cloud-based, network solutions and professional services to the Federal Government. We are dedicated to recruiting, developing, and empowering a diverse, high-performing workforce that is passionate about what they do, committed to our shared values, and dedicated to our customers' mission. AT&T has an opening for an Data Analyst (Advanced) to support the Intelligence Sector. The Data Analyst examines data from multiple disparate sources with the goal of providing security and privacy insight. Designs and implements custom algorithms, workflow processes and layouts for complex, enterprise-scale data sets used for modeling, data mining, and research purposes."]];
+"AT&T Global Public Sector is a trusted provider of secure, IP enabled, cloud-based, network solutions and professional services to the Federal Government. We are dedicated to recruiting, developing, and empowering a diverse, high-performing workforce that is passionate about what they do, committed to our shared values, and dedicated to our customers' mission. AT&T has an opening for an Data Analyst (Advanced) to support the Intelligence Sector. The Data Analyst examines data from multiple disparate sources with the goal of providing security and privacy insight. Designs and implements custom algorithms, workflow processes and layouts for complex, enterprise-scale data sets used for modeling, data mining, and research purposes."],
+["Technical Project Manager",
+"City of Alexandria",
+"Alexandria, VA",
+"Are you interested in utilizing your civil engineering experience and project management skills to deliver impactful and meaningful infrastructure solutions for the City of Alexandria, this is the position for you! The City's Department of Project Implementation is looking for a Technical Project Manager who will be responsible for managing projects throughout the design, planning, and construction phases. The employee will manage a wide variety municipal infrastructure projects that may include flood mitigation, stormwater and water quality improvements, sanitary sewer infrastructure, roadway improvements, transit projects, bicycle and pedestrian improvements and parks."]];
 
 const stop = ['a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'and', 'any', 'are', 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'could', 'did', 'do', 'does', 'doing', 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', 'has', 'have', 'having', 'he', "he'd", "he'll", "he's", 'her', 'here', "here's", 'hers', 'herself', 'him', 'himself', 'his', 'how', "how's", 'i', "i'd", "i'll", "i'm", "i've", 'if', 'in', 'into', 'is', 'it', "it's", 'its', 'itself', "let's", 'me', 'more', 'most', 'my', 'myself', 'nor', 'of', 'on', 'once', 'only', 'or', 'other', 'ought', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'same', "she'd", "she'll", "she's", 'should', 'so', 'some', 'such', 'than', 'that', "that's", 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', "there's", 'these', 'they', "they'd", "they'll", "they're", "they've", 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', 'we', "we'd", "we'll", "we're", "we've", 'were', 'what', "what's", 'when', "when's", 'where', "where's", 'which', 'while', 'who', "who's", 'whom', 'why', "why's", 'with', 'would', 'you', "you'd", "you'll", "you're", "you've", 'your', 'yours', 'yourself', 'yourselves'];
 function search(){
@@ -139,7 +143,7 @@ function search(){
     console.log(jobsFinal[i][0]);
     h1.appendChild(document.createTextNode(jobsFinal[i][0]));
     const small = document.createElement("small");
-    small.appendChild(document.createTextNode(jobsFinal[i][1] + "\n" + jobsFinal[i][2]));
+    small.appendChild(document.createTextNode(jobsFinal[i][1] + " | " + jobsFinal[i][2]));
     const p = document.createElement("p");
     p.appendChild(document.createTextNode(jobsFinal[i][3]));
     division.appendChild(h1);
